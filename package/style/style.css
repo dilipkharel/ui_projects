@@ -1,0 +1,26 @@
+#firstspan{
+    color:pink;
+}
+
+#secondspan{
+    color:paleturquoise;
+}
+
+span {
+    font-size: 50px;
+    color: green;
+    cursor:pointer;
+}
+
+span:hover{
+    font-size: 90px;
+    color:red;
+}
+
+.group{
+    color:#ffff00
+}
+
+.group2{
+    font-size: 70px;
+}
