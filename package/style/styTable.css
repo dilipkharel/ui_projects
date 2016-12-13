@@ -1,0 +1,25 @@
+th{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+th:hover{
+    background-color: red;
+}
+
+table{
+    border: solid 1px;
+}
+
+
+tr{
+    border: solid 1px;
+    
+}
+
+td{
+    border:solid 2px;
+    border-bottom-color: red;
+}
