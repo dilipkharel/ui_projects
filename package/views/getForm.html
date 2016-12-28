@@ -1,0 +1,93 @@
+<!doctype Html>
+<html>
+    <head>
+        <title>FORMS</title>
+        <script type='text/javascript' src='../scripts/process.js'></script>
+        <link rel='stylesheet' href='../style/styForm.css'>
+    </head>
+    
+    <body>
+        <form name="getForm" method='GET'>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>  <input type='text' name='firstname' placeholder="Enter First Name" id='firstname' value='' />  </td>
+                    <td id='firstNameErr'  class='hide'>First Name can not be blank.</td>       
+                <!--    <div id='fNError'></div> -->
+                </tr>
+                
+                <tr>
+                    <td>Last Name</td>
+                    <td> <input type='text' name='lastname' id='lastname' value='' />  </td>
+                    <td id='lastNameErr'  class='hide'>Last Name can not be blank. </td> 
+                </tr>
+                
+                <tr>
+                    <td>Address</td>
+                    <td> <input type='text' name='address' id='address' value='' />   </td>
+                    <td id='addressErr'  class='hide'>Address can not be blank.</td> 
+                </tr>
+                
+                <tr>
+                    <td>Password</td>
+                    <td>  <input type='password' name='password' id='password' value='' />  </td>
+                    <td id='passwordErr'  class='hide'>Password can not be blank</td> 
+                </tr>
+                
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type='radio' name='gender' value='male' id='genMale' /> Male 
+                        <input type='radio' name='gender' value='female' id='genFemale'/> Female
+                        <input type='radio' name='gender' value='others' id='genOthers'/> Others
+                    </td>
+                    <td id = 'genderErr' class='hide'>
+                        Select at least one Gender.
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Cars</td>
+                    <td>
+                        <input type='checkbox' id='toyota' value='toyota' name='cars[]'/>TOYOTA
+                        <input type='checkbox' id='BMW' value='bmw' name='cars[]'/>BMW
+                        <input type='checkbox' id='Honda' value='honda' name='cars[]'/>HONDA
+                        <input type='checkbox' id='nissan' value='nissan' name='cars[]'/>NISSAN 
+                    </td>
+                    <td id='carsErr' class='hide'>Select at least one car</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Countries</td>
+                    <td>
+                        <select name='country' id='country'>
+                            <option value='0' selected='true' disabled='true'>Select a Country</option>
+                            <option value='1'> Nepal</option>
+                            <option value='2'> USA</option>
+                            <option value='3'> Canada</option>
+                        </select>
+                    
+                    </td>
+                    <td id='countryErr' class='hide'>Select valid country</td>
+                    
+                </tr>
+                
+              
+                
+                
+                <tr>
+                    <td colspan="2"> <input type='submit' value='formSubmit' onClick='processForm()'/>    </td>
+                </tr>
+            </table>
+        </form>
+        
+            <div id='results'>
+                Results will be displayed here.
+            </div>
+        
+        
+    </body>
+    
+</html>
